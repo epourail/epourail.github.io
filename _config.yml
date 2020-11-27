@@ -1,0 +1,55 @@
+name: epourail
+title: epourail
+description: >- 
+  Epourail Blog
+logo: 'assets/image/epourail.jpeg'
+favicon: 'assets/image/epourail.jpeg'
+baseurl: "" # the subpath of the site
+url: "https://epourail.github.io" # the base hostname & protocol for the site
+og_image: /assets/img/profile-pic.jpg
+google_analytics: ""
+
+header:
+  pages:
+    - name: Home
+      slug: /
+    - name: Work
+    - name: Blog
+
+footer:
+  show_powered_by: true
+  contact:
+    - name: Email
+      value: julien.verger@gmail.com
+      link: mailto:julien.verger@gmail.com
+  follow:
+    - name: Twitter
+      link: https://twitter.com/vergerju
+      username: "@vergerju"
+    - name: LinkedIn
+      link: http://linkedin.com/in/YourLinkedInUsername
+    - name: GitHub
+      link: http://github.com/YourGitHubUsername
+
+# Build settings
+markdown: kramdown
+sass:
+    style: :compressed
+plugins:
+  - jekyll-feed
+
+# Excluded items
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - feed.xml
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+
+# Used for defeating caching
+version: 1
